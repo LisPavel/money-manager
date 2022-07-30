@@ -7,7 +7,7 @@ const getTransactions = async () => {
         .getTransactions()
         .filter((tr) => tr.userId === userId);
 
-    return transactions;
+    return { content: transactions };
 };
 
 export default {
