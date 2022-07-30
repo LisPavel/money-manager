@@ -1,0 +1,14 @@
+[
+    {
+        "_id": "52bbce78560f",
+        "name": "debit",
+        "debit": 1,
+        "credit": -1
+    },
+    {
+        "_id": "200f38a89f03",
+        "name": "credit",
+        "debit": -1,
+        "credit": 1
+    }
+]
