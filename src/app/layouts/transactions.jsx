@@ -5,7 +5,6 @@ import transactionsRoutes from "../routes/transactions.routes";
 
 const Transactions = () => {
     const { path } = useRouteMatch();
-    console.log(path);
     return (
         <TransactionsLoader>
             <div className="transactions">Transactions</div>
