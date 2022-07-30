@@ -9,8 +9,8 @@ const appRoutes = {
         name: "Test",
     },
     "/transactions": {
-        path: "/transactions/:id?",
-        navPath: "/transactions",
+        path: "/transactions",
+        // navPath: "/transactions",
         name: "Transactions",
         component: Transactions,
     },

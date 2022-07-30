@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const NavBar = ({ routes, title }) => {
     const location = useLocation();
-    console.log(location);
 
     const getNavLinkClasses = (path) => {
         return `nav-link${path === location.pathname ? " active" : ""}`;
