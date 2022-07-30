@@ -2,12 +2,13 @@ import React from "react";
 // import TestLayout from "./layouts/testLayout";
 // import Transactions from "./layouts/transactions";
 import { Switch, Route, Redirect } from "react-router-dom";
+import NavBar from "./components/ui/navBar";
 import appRoutes from "./routes/app.routes";
 
 const App = () => {
     return (
         <div>
-            <h1>Money Manager</h1>
+            <NavBar routes={appRoutes} title={"My Money Manager"} />
             <Switch>
                 {Object.keys(appRoutes).map((route) => {
                     return <Route {...appRoutes[route]} key={route} />;
