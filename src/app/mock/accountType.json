@@ -2,16 +2,21 @@
     {
         "_id": "06a8ed7cd071",
         "name": "Income",
-        "entryType": "200f38a89f03"
+        "entryTypeId": "200f38a89f03"
     },
     {
         "_id": "988ddbb27007",
         "name": "Expense",
-        "entryType": "52bbce78560f"
+        "entryTypeId": "52bbce78560f"
     },
     {
         "_id": "3a87574ddf9b",
         "name": "Asset",
-        "entryType": "52bbce78560f"
+        "entryTypeId": "52bbce78560f"
+    },
+    {
+        "_id": "ee335689a943",
+        "name": "Equity",
+        "entryTypeId": "200f38a89f03"
     }
 ]
