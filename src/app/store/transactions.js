@@ -40,7 +40,6 @@ export const loadTransactions = () => async (dispatch) => {
     dispatch(transactionsRequested());
     try {
         const { content } = await transactionsService.getTransactions();
-        console.log(content);
         dispatch(transactionsReceived(content));
     } catch (error) {
         dispatch(transactionsRequestFailed(error?.message ?? error.error));

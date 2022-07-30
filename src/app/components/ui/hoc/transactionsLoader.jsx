@@ -10,7 +10,6 @@ const TransactionsLoader = ({ children }) => {
     const dataStatus = useSelector(getTransactionsDataStatus());
 
     useEffect(() => {
-        console.log(dataStatus);
         if (!dataStatus) {
             dispatch(loadTransactions());
         }
