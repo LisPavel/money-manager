@@ -24,11 +24,19 @@
         "parentId": null
     },
     {
+        "_id": "ad4b565c77f6",
+        "name": "Equity",
+        "type": "ee335689a943",
+        "description": "Equity",
+        "userId": null,
+        "parentId": null
+    },
+    {
         "_id": "cf685f10391e",
         "name": "Opening balance",
         "type": "ee335689a943",
         "description": "Opening balance",
         "userId": null,
-        "parentId": null
+        "parentId": "ad4b565c77f6"
     }
 ]
