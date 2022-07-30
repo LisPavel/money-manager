@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "1b942c718896",
+        "type": "06a8ed7cd071",
+        "name": "Income",
+        "description": "Income",
+        "openingBalance": 0,
+        "userId": null,
+        "parentId": null
+    },
+    {
+        "_id": "bce6305b7385",
+        "type": "988ddbb27007",
+        "name": "Expenses",
+        "description": "Income",
+        "openingBalance": 0,
+        "userId": null,
+        "parentId": null
+    },
+    {
+        "_id": "7108d540ec8b",
+        "type": "3a87574ddf9b",
+        "name": "Assets",
+        "description": "Income",
+        "openingBalance": 0,
+        "userId": null,
+        "parentId": null
+    }
+]
