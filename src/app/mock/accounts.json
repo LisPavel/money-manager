@@ -4,7 +4,7 @@
         "type": "06a8ed7cd071",
         "name": "Income",
         "description": "Income",
-        "userId": null,
+        "user": null,
         "parentId": null
     },
     {
@@ -12,7 +12,7 @@
         "type": "988ddbb27007",
         "name": "Expenses",
         "description": "Expenses",
-        "userId": null,
+        "user": null,
         "parentId": null
     },
     {
@@ -20,7 +20,7 @@
         "type": "3a87574ddf9b",
         "name": "Assets",
         "description": "Assets",
-        "userId": null,
+        "user": null,
         "parentId": null
     },
     {
@@ -28,7 +28,7 @@
         "name": "Equity",
         "type": "ee335689a943",
         "description": "Equity",
-        "userId": null,
+        "user": null,
         "parentId": null
     },
     {
@@ -36,7 +36,7 @@
         "name": "Opening balance",
         "type": "ee335689a943",
         "description": "Opening balance",
-        "userId": null,
+        "user": null,
         "parentId": "ad4b565c77f6"
     }
 ]
