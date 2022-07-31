@@ -2,19 +2,19 @@
     {
         "_id": "22922bdb1be6",
         "userId": "b8b1108bfaa8_6666666",
-        "transferFromId": "",
-        "transferToId": "cf685f10391e",
+        "creditAccount": "",
+        "debitAccount": "cf685f10391e",
         "amount": 1000,
-        "date": "2022-06-22",
+        "date": 1659293855319,
         "description": "Opening balance"
     },
     {
         "_id": "5c7927ec1d15",
         "userId": "b8b1108bfaa8_6666666",
-        "transferFromId": "cf685f10391e",
-        "transferToId": "3a87574ddf9b",
+        "creditAccount": "cf685f10391e",
+        "debitAccount": "3a87574ddf9b",
         "amount": 1000,
-        "date": "2022-06-22",
+        "date": 1659293861173,
         "description": "Move money to  assets"
     }
 ]
