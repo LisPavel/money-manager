@@ -55,5 +55,8 @@ export const getTransactionsLoadingStatus = () => (state) => {
 export const getTransactionsDataStatus = () => (state) => {
     return state.transactions.dataLoaded;
 };
+export const getTransactionById = (id) => (state) => {
+    return state.transactions.entities.find((t) => t._id === id);
+};
 
 export default transactionsReducer;

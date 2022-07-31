@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Table from "../common/table";
+import { useHistory, useLocation } from "react-router-dom";
 
 const TransactionsTable = ({ transactions, sortBy, onSort }) => {
+    const history = useHistory();
+    const location = useLocation();
+    console.log(location);
     const columns = {
         data: {
             name: "Date",
@@ -33,6 +37,29 @@ const TransactionsTable = ({ transactions, sortBy, onSort }) => {
         description: {
             name: "Desc",
             path: "description",
+        },
+        edit: {
+            component: ({ _id }) => {
+                return (
+                    <button
+                        className="btn btn-sm btn-primary"
+                        onClick={() =>
+                            history.push(`${location.pathname}/edit/${_id}`)
+                        }
+                    >
+                        <i className="bi bi-pencil-fill" />
+                    </button>
+                );
+            },
+        },
+        remove: {
+            component: ({ _id }) => {
+                return (
+                    <button className="btn btn-sm btn-danger">
+                        <i className="bi bi-trash3-fill"></i>
+                    </button>
+                );
+            },
         },
     };
     return (
