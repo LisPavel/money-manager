@@ -1,12 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./app/app";
+import { createStore } from "./app/store/createStore";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "react-toastify/dist/ReactToastify.css";
+import { Provider } from "react-redux";
+import { Router } from "react-router-dom";
+import history from "./app/utils/history";
+
+const store = createStore();
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <Provider store={store}>
+            <Router history={history}>
+                <App />
+            </Router>
+        </Provider>
     </React.StrictMode>,
     document.getElementById("root")
 );
