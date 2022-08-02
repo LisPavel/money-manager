@@ -1,6 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
+    getAccountTypesDataStatus,
+    getAccountTypesLoadingStatus,
+    loadAccountTypes,
+} from "../../../store/accountTypes";
+import {
     getDoubleEntryTypesDataStatus,
     getDoubleEntryTypesLoadingStatus,
     loadDoubleEntryTypes,
@@ -14,12 +19,26 @@ const AppLoader = ({ children }) => {
     const doubleEntryTypesDataStatus = useSelector(
         getDoubleEntryTypesDataStatus()
     );
+    const accountTypesDataStatus = useSelector(getAccountTypesDataStatus());
+    const accountTypesLoadingStatus = useSelector(
+        getAccountTypesLoadingStatus()
+    );
 
     useEffect(() => {
-        if (!doubleEntryTypesDataStatus) dispatch(loadDoubleEntryTypes());
-    }, [doubleEntryTypesDataStatus]);
+        dispatch(loadDoubleEntryTypes());
+        dispatch(loadAccountTypes());
+    }, []);
 
-    if (!doubleEntryTypesDataStatus || doubleEntryTypesLoading) {
+    const isLoading = () => {
+        return (
+            !doubleEntryTypesDataStatus ||
+            doubleEntryTypesLoading ||
+            !accountTypesDataStatus ||
+            accountTypesLoadingStatus
+        );
+    };
+
+    if (isLoading()) {
         return "Loading...";
     }
 
